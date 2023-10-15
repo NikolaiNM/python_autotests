@@ -12,7 +12,7 @@ create_poke = requests.post(f"{host}/pokemons", json = {
     "photo": "https://dolnikov.ru/pokemons/albums/001.png"
 }, headers = {"Content-Type" : "application/json", "trainer_token" : token})
 pokek = create_poke.json()["id"]
-print(create_poke.json()["id"])
+print(create_poke.text)
 
 
 #Смена имени покемона
