@@ -1,12 +1,12 @@
 import requests
 import pytest
 
-token = "bd60660e4ae4a2e3618ff1850af1670e"
+token = "0a8bd85fec6204cb14e5118fe3a188a4"
 host = "https://api.pokemonbattle.me:9104"
 
 #Проверка статуса ответа 200 на запрос конкретного тернера 2316
 def test_status_code():
-  response = requests.get(f"{host}/trainers", params={'trainer_id': 2316})
+  response = requests.get(f"{host}/trainers", params={'trainer_id': 2654})
   assert response.status_code == 200
 
 #Обновление информации по тренеру (имя и город) и проверка сообщения  ифнормация обновлена
